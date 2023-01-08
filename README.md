@@ -1,1 +1,1 @@
-# nuxt-freegame-app
+# Simple Example Games Database API
