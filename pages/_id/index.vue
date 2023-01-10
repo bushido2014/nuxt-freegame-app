@@ -36,12 +36,35 @@
                 Release Date:<span>{{ game.release_date }}</span>
               </li>
             </ul>
-
-            <ul>
-              <li v-for="minimum in game.minimum_system_requirements">
-                {{ minimum }}
-              </li>
-            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="system" v-if="game.minimum_system_requirements">
+        <h4>Minimum System Requirements</h4>
+        <div class="flex">
+          <div class="system-item">
+            <div>
+              <p>Operational System - SO</p>
+              <p>{{ game.minimum_system_requirements.os }}</p>
+            </div>
+            <div>
+              <p>Processor</p>
+              <p>{{ game.minimum_system_requirements.processor }}</p>
+            </div>
+            <div>
+              <p>Memory</p>
+              <p>{{ game.minimum_system_requirements.memory }}</p>
+            </div>
+          </div>
+          <div class="system-item">
+            <div>
+              <p>Storage</p>
+              <p>{{ game.minimum_system_requirements.storage }}</p>
+            </div>
+            <div>
+              <p>Graphics card</p>
+              <p>{{ game.minimum_system_requirements.graphics }}</p>
+            </div>
           </div>
         </div>
       </div>
