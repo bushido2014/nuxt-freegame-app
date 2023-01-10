@@ -58,7 +58,7 @@ export default {
   background-color: #202238;
   opacity: 0.9;
   max-width: 550px;
-  width: 100%;
+
   position: relative;
   text-align: center;
 }
@@ -88,9 +88,10 @@ export default {
   .homeSwiper h1 {
     font-size: 2.6rem;
   }
-  .slide-dext {
-    padding-left: 15px;
-    padding-right: 15px;
+}
+@media only screen and (max-width: 768px) {
+  .homeSwiper h1 {
+    font-size: 2.2rem;
   }
 }
 </style>
