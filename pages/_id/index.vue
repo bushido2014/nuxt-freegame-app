@@ -79,7 +79,7 @@
 import Swiper from 'swiper/swiper-bundle.min';
 import 'swiper/swiper-bundle.min.css';
 export default {
-  async asyncData({ $axios, params }) {
+  async getSingleGame({ $axios, params }) {
     const config = {
       'x-rapidapi-key': '8c225fdb62mshce8bc529a49bbadp1d87c7jsn82460f41d425',
       'x-rapidapi-host': 'free-to-play-games-database.p.rapidapi.com',
