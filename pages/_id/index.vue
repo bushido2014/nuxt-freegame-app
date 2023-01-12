@@ -44,25 +44,25 @@
         <div class="flex">
           <div class="system-item">
             <div>
-              <p>Operational System - SO</p>
+              <p class="system-item__title">Operational System - SO</p>
               <p>{{ game.minimum_system_requirements.os }}</p>
             </div>
             <div>
-              <p>Processor</p>
+              <p class="system-item__title">Processor</p>
               <p>{{ game.minimum_system_requirements.processor }}</p>
             </div>
             <div>
-              <p>Memory</p>
+              <p class="system-item__title">Memory</p>
               <p>{{ game.minimum_system_requirements.memory }}</p>
             </div>
           </div>
           <div class="system-item">
             <div>
-              <p>Storage</p>
+              <p class="system-item__title">Storage</p>
               <p>{{ game.minimum_system_requirements.storage }}</p>
             </div>
             <div>
-              <p>Graphics card</p>
+              <p class="system-item__title">Graphics card</p>
               <p>{{ game.minimum_system_requirements.graphics }}</p>
             </div>
           </div>
