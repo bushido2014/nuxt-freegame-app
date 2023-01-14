@@ -1,5 +1,8 @@
 <template>
   <section class="single-game">
+    <div>
+      <loader v-show="loader"></loader>
+    </div>
     <div class="container">
       <div class="back-home">
         <NuxtLink class="button" :to="{ name: 'index' }"> Back </NuxtLink>
@@ -76,9 +79,15 @@
 </template>
 
 <script>
+import Loader from '~/components/loader/loader.vue';
 import Swiper from 'swiper/swiper-bundle.min';
 import 'swiper/swiper-bundle.min.css';
 export default {
+  data() {
+    return {
+      loader: true,
+    };
+  },
   async asyncData({ $axios, params }) {
     const config = {
       'x-rapidapi-key': '8c225fdb62mshce8bc529a49bbadp1d87c7jsn82460f41d425',
@@ -105,8 +114,12 @@ export default {
 
       loop: true,
       speed: 1800,
-    });
+    }),
+      setTimeout(() => {
+        this.loader = false;
+      }, 1800);
   },
+
   head() {
     return {
       title: this.game.title,
