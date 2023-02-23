@@ -151,13 +151,13 @@ section {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #ced4da;
+  background-color: #acb6c1;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
-  color: #212529;
+  border: 2px solid #302846fc;
+  color: #333;
 }
 .search-input:focus {
-  background-color: #fff;
+  background-color: #f1f1f1;
   border-color: #ccc;
   outline: 0;
 }
