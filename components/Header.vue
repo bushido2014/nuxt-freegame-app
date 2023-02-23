@@ -7,11 +7,11 @@
         /></nuxt-link>
       </div>
       <nav>
-        <!-- <ul class="flex">
+        <ul class="flex">
           <li>
             <nuxt-link to="/"> Home</nuxt-link>
           </li>
-        </ul> -->
+        </ul>
       </nav>
     </div>
   </header>
