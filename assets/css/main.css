@@ -161,6 +161,9 @@ section {
   border-color: #ccc;
   outline: 0;
 }
+.search-input:focus::placeholder {
+  color: transparent;
+}
 .card {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   transition: all 0.3s ease;
