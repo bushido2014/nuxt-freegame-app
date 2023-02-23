@@ -13,7 +13,6 @@
           />
         </div>
         <div class="game-wrapper grid">
-          <!-- <div class="card" v-for="game in games.slice(0, 36)"> -->
           <div
             class="card"
             v-for="game in filteredGames.slice(0, 42)"
@@ -47,49 +46,12 @@
   </div>
 </template>
 <script>
-// import HomeSlide from '~/components/HomeSlide';
-
-// export default {
-//   data() {
-//     return {
-//       urlGame: 'https://free-to-play-games-database.p.rapidapi.com/api/games',
-//       apiKey: '8c225fdb62mshce8bc529a49bbadp1d87c7jsn82460f41d425',
-//       rHost: 'free-to-play-games-database.p.rapidapi.com',
-//       games: [],
-//     };
-//   },
-//   mounted() {
-//     this.loadFetch();
-//   },
-//   methods: {
-//     async loadFetch() {
-//       const games = await this.$axios
-//         .$get(this.urlGame, {
-//           headers: {
-//             'X-RapidAPI-Key': this.apiKey,
-//             'X-RapidAPI-Host': this.rHost,
-//           },
-//         })
-//         .then((games) => {
-//           this.games = games;
-//           console.log(games);
-//         });
-//     },
-//   },
-//   head: {
-//     bodyAttrs: {
-//       class: 'home-page',
-//     },
-//   },
-// };
-
 import HomeSlide from '~/components/HomeSlide';
 
 export default {
   components: {
     HomeSlide,
   },
-
   data() {
     return {
       urlGame: 'https://free-to-play-games-database.p.rapidapi.com/api/games',
